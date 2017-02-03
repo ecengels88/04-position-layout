@@ -1,9 +1,12 @@
 body {
   margin: 0;
+  background: #961e00;
 }
 
 * {
   box-sizing: border-box;
+  border: blue 1px solid;
+  padding: 0.5rem;
 }
 
 ul {
@@ -13,4 +16,5 @@ ul {
 
 img {
   max-width: 100%;
+
 }
