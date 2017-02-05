@@ -19,24 +19,39 @@ img {
 }
 
 .character-stats {
-overflow: auto;
+  position: fixed;
+  top: 80%;
+  overflow: auto;
 }
 
 .character-stats_avatar {
   display: inline-block;
+  padding-right: 0;
   float:left;
   width: 7rem;
+
 }
 
 .character-stats_health {
+  margin-top: .6rem;
   padding: .18rem;
   display: inline-block;
-  overflow: auto;
   color: white;
+
 }
 
 .health-text {
+  margin: 0;
   padding: .2rem;
+}
+
+.health-text_left {
+  transform: rotate(-2deg);
+}
+
+.health-text_right {
+  float: right;
+  color: white;
 }
 
 .health-text__bold {
@@ -46,17 +61,37 @@ overflow: auto;
 }
 
 .health-bar {
-
+  margin: 0;
+  transform: rotate(-2deg);
 }
 
 .health-bar__bar {
+  margin: 0 .08rem;
   padding: .3rem;
-  border-radius: .3rem;
+  border-radius: .25rem;
   background: rgba(255,255,255,.85);
 }
 
 .health-bar__damaged {
+  margin: 0 .08rem;
   padding: .3rem;
-  border-radius: .3rem;
+  border-radius: .25rem;
   background: rgba(209,141,25,.85);
+}
+
+.weapon-status {
+
+}
+
+.weapon-status__secondary {
+  display: inline-block;
+}
+
+.secondary-weapon-image {
+  width: 5rem;
+}
+
+.weapon-status__main {
+  display: inline-block;
+  overflow: auto;
 }
