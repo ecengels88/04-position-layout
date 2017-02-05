@@ -16,5 +16,47 @@ ul {
 
 img {
   max-width: 100%;
+}
 
+.character-stats {
+overflow: auto;
+}
+
+.character-stats_avatar {
+  display: inline-block;
+  float:left;
+  width: 7rem;
+}
+
+.character-stats_health {
+  padding: .18rem;
+  display: inline-block;
+  overflow: auto;
+  color: white;
+}
+
+.health-text {
+  padding: .2rem;
+}
+
+.health-text__bold {
+  padding: .2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.health-bar {
+
+}
+
+.health-bar__bar {
+  padding: .3rem;
+  border-radius: .3rem;
+  background: rgba(255,255,255,.85);
+}
+
+.health-bar__damaged {
+  padding: .3rem;
+  border-radius: .3rem;
+  background: rgba(209,141,25,.85);
 }
