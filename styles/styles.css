@@ -18,6 +18,10 @@ img {
   max-width: 100%;
 }
 
+.container {
+  overflow: auto;
+}
+
 .character-stats {
   position: fixed;
   top: 80%;
@@ -50,8 +54,10 @@ img {
 }
 
 .health-text_right {
+  display: inline-block;
   float: right;
   color: white;
+  padding-right: .7rem;
 }
 
 .health-text__bold {
@@ -80,18 +86,54 @@ img {
 }
 
 .weapon-status {
-
+  overflow: auto;
+  width: 28rem;
+  padding: 0;
+  float:right;
+  transform: rotate(2deg);
+  position: fixed;
+  top: 78%;
+  left: 60%;
 }
 
 .weapon-status__secondary {
   display: inline-block;
+  float: right;
+  margin-top: 2.5rem;
 }
 
 .secondary-weapon-image {
-  width: 5rem;
+  width: 3rem;
+  padding: .2rem;
 }
 
 .weapon-status__main {
   display: inline-block;
+  float: right;
   overflow: auto;
+  padding-left: 0;
+}
+
+.main-weapon-image {
+  display: inline-block;
+  float: right;
+  width: 18rem;
+  padding: .2rem;
+}
+
+.key-bindings {
+  padding-top: 0;
+}
+
+.binding-wrapper {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.key-bindings-image {
+  padding: 0;
+  width: 1.5rem;
+  border: rgba(255,255,255,.85) 1px solid;
+  border-radius: .2rem;
 }
