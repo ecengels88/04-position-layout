@@ -5,7 +5,7 @@ body {
 
 * {
   box-sizing: border-box;
-  border: blue 1px solid;
+  /*border: blue 1px solid;*/
   padding: 0.5rem;
 }
 
@@ -24,7 +24,9 @@ img {
 
 .character-stats {
   position: fixed;
-  top: 80%;
+  padding: 0;
+  bottom: 0;
+  left: 1rem;
   overflow: auto;
 }
 
@@ -54,7 +56,6 @@ img {
 }
 
 .health-text_right {
-  display: inline-block;
   float: right;
   color: white;
   padding-right: .7rem;
@@ -87,19 +88,13 @@ img {
 
 .weapon-status {
   overflow: auto;
-  width: 28rem;
+  width: 24rem;
   padding: 0;
   float:right;
   transform: rotate(2deg);
   position: fixed;
-  top: 78%;
-  left: 60%;
-}
-
-.weapon-status__secondary {
-  display: inline-block;
-  float: right;
-  margin-top: 2.5rem;
+  bottom: 1.5rem;
+  right: 1rem;
 }
 
 .secondary-weapon-image {
@@ -111,7 +106,24 @@ img {
   display: inline-block;
   float: right;
   overflow: auto;
-  padding-left: 0;
+  padding: 0;
+}
+
+.boxes {
+  overflow: auto;
+  padding: 0;
+}
+
+.squares {
+  overflow: auto;
+  padding: 0;
+}
+
+.main-weapon {
+  overflow: auto;
+  float: right;
+  margin: 0;
+  padding: 0;
 }
 
 .main-weapon-image {
@@ -121,14 +133,40 @@ img {
   padding: .2rem;
 }
 
-.key-bindings {
-  padding-top: 0;
+.weapon-status__secondary {
+  overflow: auto;
+  float: left;
+  padding: 2.5rem 0 0 0;
 }
 
-.binding-wrapper {
+.key-bindings-left {
+  float: right;
   padding: 0;
-  margin: 0;
-  display: inline-block;
+}
+
+.left-main-image {
+  padding: 0;
+}
+
+.left-secondary-image {
+  margin: 0 auto;
+  padding: 0;
+  width: 1.5rem;
+}
+
+.key-bindings-right {
+  float: right;
+  padding: 0;
+}
+
+.right-main-image {
+  padding: 0;
+}
+
+.right-secondary-image {
+  margin: 0 auto;
+  padding: 0;
+  width: 1.5rem;
 }
 
 .key-bindings-image {
